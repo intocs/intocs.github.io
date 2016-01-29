@@ -1,0 +1,37 @@
+html {
+    font-family: helvetica;
+
+}
+
+body {
+    background-color: #fdf6f8
+}
+
+.site-header {
+    float: top;
+    text-align: center;
+    margin: 10px;
+}
+
+.site-header img {
+    height: 80%;
+    width: auto;
+}
+
+.site-nav {
+    text-align: center;
+    margin: 10px;
+}
+
+.site-nav ul {
+    width: 80%;
+}
+
+.site-nav ul, li {
+    width
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background-color: #555;
+}
