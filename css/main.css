@@ -4,13 +4,23 @@ html {
 }
 
 body {
-    background-color: #fdf6f8
+    background-color: #fff;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.active {
+    color: #d0021b !important;
 }
 
 .site-header {
     float: top;
     text-align: center;
-    margin: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .site-header img {
@@ -18,20 +28,16 @@ body {
     width: auto;
 }
 
-.site-nav {
-    text-align: center;
-    margin: 10px;
-}
+#site-nav {
 
-.site-nav ul {
-    width: 80%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .site-nav ul, li {
-    width
+    padding: 0px;
+    font-size: 18px;
     text-align: center;
     display: inline-block;
-    padding: 10px;
     margin: 10px;
-    background-color: #555;
 }
