@@ -20,6 +20,7 @@ a {
 }
 
 .border {
+    margin-top: 1.6%;
     width: 20%;
     z-index: 10;
     height: 100vh;

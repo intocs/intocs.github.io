@@ -15,7 +15,7 @@ const spriteHeight = viewportWidth / (5 * 3);
 
 
 window.onload = function() {
-    for (i = 0; i < viewportHeight / spriteHeight; i++) {
+    for (i = 0; i < (viewportHeight - spriteHeight) / spriteHeight; i++) {
 
         var imgLeft = document.createElement("img"),
             imgRight = document.createElement("img");
