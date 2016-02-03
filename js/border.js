@@ -3,7 +3,7 @@ var images = ["../img/c1.png", "../img/c2.png", "../img/c3.png", "../img/c4.png"
               "../img/c12.png", "../img/c13.png", "../img/c14.png"]
 var viewportWidth = $(window).width();
 var viewportHeight = $(window).height();
-const spriteHeight = 100;
+const spriteHeight = viewportWidth / (5 * 3);
 
 
 window.onload = function() {
