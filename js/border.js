@@ -1,6 +1,6 @@
 var images = ["../img/c1.png", "../img/c2.png", "../img/c3.png", "../img/c4.png", "../img/c5.png",
               "../img/c7.png", "../img/c8.png", "../img/c9.png", "../img/c10.png", "../img/c11.png",
-              "../img/c12.png", "../img/c13.png", "../img/c14.png"]
+              "../img/c12.png", "../img/c13.png"]
 var viewportWidth = $(window).width();
 var viewportHeight = $(window).height();
 const spriteHeight = viewportWidth / (5 * 3);
