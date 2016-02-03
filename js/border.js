@@ -10,6 +10,7 @@ var getRandomImgURL = () => images[Math.floor(Math.random() * NUM_IMAGES)];
 var viewportWidth = $(window).width();
 var viewportHeight = $(window).height();
 
+// constants below are 5: ratio of width to page, 3: ratio of height to width
 const spriteHeight = viewportWidth / (5 * 3);
 
 
