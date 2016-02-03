@@ -26,6 +26,14 @@ a {
     position: fixed;
 }
 
+.border-sprite {
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    filter: FlipH;
+}
+
 #left {
     float: left;
     text-align: left;
@@ -33,6 +41,7 @@ a {
 
 #right {
     right: 0;
+    text-align: right;
 }
 
 .active {
