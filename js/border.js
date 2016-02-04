@@ -5,7 +5,9 @@ for (var i = 0; i < NUM_IMAGES; i++) {
     images.push(`../img/c${i + 1}.png`);
 }
 
-var getRandomImgURL = () => images[Math.floor(Math.random() * NUM_IMAGES)];
+var getRandomImgURL = function() {
+    return images[Math.floor(Math.random() * NUM_IMAGES)]
+};
 
 var viewportWidth = $(window).width();
 var viewportHeight = $(window).height();
@@ -26,8 +28,8 @@ window.onload = function() {
 
         imgRight.className = "border-sprite";
 
-        document.querySelector("#left").appendChild(imgLeft);
-        document.querySelector("#right").appendChild(imgRight);
+        $("#left").append(imgLeft);
+        $("#right").append(imgRight);
 
     }
 }
