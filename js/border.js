@@ -1,13 +1,12 @@
 const NUM_IMAGES = 13;
-var images = [];
 
-for (var i = 0; i < NUM_IMAGES; i++) {
-    images.push(`../img/c${i + 1}.png`);
+var imageURLs = Array(NUM_IMAGES).map(function(n, i) {
+    return `url(../img/c${i + 1}.png)`;
+});
+
+function getRandomImgURL() {
+    return imageURLs[ Math.floor(Math.random() * NUM_IMAGES) ];
 }
-
-var getRandomImgURL = function() {
-    return images[Math.floor(Math.random() * NUM_IMAGES)]
-};
 
 var viewportWidth = $(window).width();
 var viewportHeight = $(window).height();
@@ -16,15 +15,15 @@ var viewportHeight = $(window).height();
 const spriteHeight = viewportWidth / (5 * 3);
 
 
-window.onload = function() {
+window.addEventListener("load", function() {
     for (i = 0; i < (viewportHeight - spriteHeight) / spriteHeight; i++) {
 
-        var imgLeft = document.createElement("img"),
+        var imgLeft  = document.createElement("img"),
             imgRight = document.createElement("img");
 
-        imgLeft.src = `url(\/${getRandomImgURL()}`;
-        imgRight.src = `url(\/${getRandomImgURL()}`;
-        imgLeft.style.height = imgRight.style.height = `${spriteHeight.toString()}px`;
+        imgLeft.src = getRandomImgURL();
+        imgRight.src = getRandomImgURL();
+        imgLeft.style.height = imgRight.style.height = `${ spriteHeight }px`;
 
         imgRight.className = "border-sprite";
 
@@ -32,4 +31,4 @@ window.onload = function() {
         $("#right").append(imgRight);
 
     }
-}
+});
