@@ -1,6 +1,6 @@
 const NUM_IMAGES = 13;
 
-var imageURLs = Array(NUM_IMAGES).map(function(n, i) {
+var imageURLs = Array(NUM_IMAGES).fill().map(function(n, i) {
     return `url(../img/c${i + 1}.png)`;
 });
 
