@@ -1,7 +1,7 @@
 const NUM_IMAGES = 13;
 
 var imageURLs = Array(NUM_IMAGES).fill().map(function(n, i) {
-    return `url(../img/c${i + 1}.png)`;
+    return `url(../img/c${i + 1}.png`;
 });
 
 function getRandomImgURL() {
